@@ -1,0 +1,24 @@
+main{
+    width: 70%;
+    margin:  0 auto;
+}
+.product{
+    display: flex;
+    margin-top: 100px;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.product_image {
+    border: 2px solid var(--fg-color);
+    border-radius: 20px;
+    height: 80%;
+}
+
+.product_details{
+    align-self: start;
+}
+
+.product_details h2 {
+    font-size: 5rem;
+}

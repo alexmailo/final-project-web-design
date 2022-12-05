@@ -1,0 +1,151 @@
+nav{
+    z-index: 10;
+}
+
+section{
+    min-height: 60vh;
+    padding: 20px;
+}
+
+#hero_section{
+    background-image: url("../Images/hero.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#hero_section h1{
+    font-size:5rem;
+    margin-bottom: 30px;
+    background: -webkit-linear-gradient(350deg,var(--fg-color),rgb(80, 80, 80));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#hero_section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 60%;
+    line-height: 1.5;
+}
+
+#hero_section #button{
+    padding: 15px 40px;
+    background-color: var(--bg-color);
+    border: 1px solid white;
+    outline: none;
+    font-size: 26px;
+    color: white;
+    font-family: 'Creepster';
+    text-decoration: none;
+}
+
+#columns_section, #reviews_section{
+    background-color: rgb(142, 142, 142);
+    color: black;
+}
+
+#columns_section_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+
+.column h3 {
+    font-size: 2rem;
+}
+
+.column p{
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.column {
+    width:50%;
+}
+/* why_section */
+#why_section h1{
+    text-align: center;
+
+}
+
+
+#values{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+.value{
+    padding: 20px;
+}
+
+
+.value_row{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+/* reviews section */
+
+#reviews_section{
+    height: initial;
+    padding: 20px;
+}
+
+#reviews_section h1{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--bg-color);
+}
+
+#reviews{
+    height: 100%;
+    margin: 0 auto;
+}
+
+.review{
+    background-color: rgb(133, 133, 133);
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.review_image{
+    height: 70px;
+    width: 70px;
+}
+
+.review_quote{
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+    #values{
+        grid-template-columns: 1fr;
+        gap: 20px
+    }
+    #columns_section_list{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

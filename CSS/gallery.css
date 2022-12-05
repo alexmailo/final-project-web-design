@@ -1,0 +1,81 @@
+.product_info_name{
+    color: var(--fg-color);
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#gallery_page_title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.all_galleries{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+#gallery_page_title{
+    font-family: 'Creepster', cursive;
+
+}
+.gallery{
+    background-color: var(--accent-color);
+    padding: 1rem;
+}
+.gallery h2 {
+    padding: 20px 2rem;
+    font-size: 2rem;
+    /* font-family: 'Nova Oval', cursive; */
+}
+.gallery_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+    gap: 2rem;
+    padding: 2rem;
+}
+.product{
+    background-color: var(--accent-color2);
+    display: flex;
+		flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    /* box-shadow: 10px 10px 3px var(--bg-color); */
+}
+.product:hover{
+    transform:scale(1.1);
+}
+.product_info{
+	display: flex;
+	margin-top: 20px;
+	gap: 20px;
+    
+}
+
+.product_info_price{
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.icon_with_text{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.product img{
+    object-fit: contain;
+    max-width: 50%;
+    max-height: 80%;
+}
+@media  (max-width: 1000px) {
+    .all_galleries{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
